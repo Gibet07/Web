@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-principal: "Bodoni Moda SC", system-ui;
+    --font-secundaria: "Work Sans", sans-serif;
+
+    --pes-font: 300;
+    --pes-negreta: 900;
+
+    --colorClar: #002855;
+    --colorFosc: #001f54;
+    --ColorResaltar: #023e7d;
+    --Colorlletres: aliceblue;
+
+    --tamany-h1: 3rem;
+    --tamany-h2: 2.25rem;
+    --tamany-h3: 1.5rem;
+    --tamany-body: 1.25rem;
+}
+
+strong {
+    font-weight: var(--pes-negreta);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --tamany-h1: 4.5rem;
+        --tamany-h2: 3.75rem;
+        --tamany-h3: 1.5rem;
+        --tamany-body: 1.25rem;
+    }
+}
+
+body {
+    background: var(--colorClar);
+    color: var(--Colorlletres);
+    margin: 0;
+    font-family: var(--font-principal);
+    font-size: var(--tamany-body);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin: 0;
+
+}
+
+h1 {
+    font-size: var(--tamany-h1);
+}
+
+h2 {
+    font-size: var(--tamany-h2);
+}
+
+h3 {
+    font-size: var(--tamany-h3);
+}
+
+.titol {
+    margin-top: .25em;
+}
+
+.titol-intro {
+    font-weight: var(--pes-font);
+}
+
+.subtitol {
+    margin: 0;
+    font-size: var(--tamany-h3);
+}
+
+.subtitol-intro,
+.subtitol-about {
+    background-color: var(--ColorResaltar);
+    font-family: var(--font-secundaria);
+}
+
+.titol-intro strong {
+    display: block;
+}
