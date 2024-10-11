@@ -8,105 +8,128 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/edc4bdbef0.js" crossorigin="anonymous"></script>
     <title>Gibet Domínguez Riera</title>
 </head>
-
 <body>
     <header>
-        <div>
-            <img src="./img/Logo.png" width="5%">
+        <div class="logo">
+            <img src="./img/Logo.png">
         </div>
-        <button>
-            <span>HOLA</span>
+        <button class="desplegable">
+            <span id="hola" class="hamburguer"></span>
         </button>
-        <nav>
-            <ul>
-                <li><a href="#Presentacion">Gibet Domínguez Riera</a></li>
-                <li><a href="#Serveis">Serveis</a></li>
-                <li><a href="#Sobre mi">About me</a></li>
-                <li><a href="#Treballs">Treballs</a></li>
+        <nav id="m" class="menu">
+            <ul class="menu-lista">
+                <li class="menu-item">
+                    <a href="#Presentacion" class="menu-link" id="b1">Gibet Domínguez Riera</a></li>
+                <li class="menu-item"> 
+                    <a href="#Serveis" class="menu-link" id="b2">Els meus serveis</a></li>
+                <li class="menu-item">
+                <a href="#Sobre mi" class="menu-link" id="b3">Who I am</a></li>
+                <li class="menu-item">
+                    <a href="#Treballs" class="menu-link" id="b4">Inmersions</a></li>
             </ul>
         </nav>
     </header>
-    <section id="Presentacion">
-        <h1 class="titol titol-intro">Gibet Dominguez Riera</h1>
+    <section id="Presentacion" class="intro">
+        <h1 class="titol titol-intro rotate-vert-center">Gibet Dominguez Riera</h1>
         <p class="subtitol subtitol-intro">Tinc 17 i el que més m'agrada fer és bussejar</p>
-        <img src="./img/gibet.jpg" alt="" width="10%">
+        <img src="./img/gibet.jpg" alt="" class="intro-img">
     </section>
-    <section id="Serveis">
-        <div>
-            <div>
+    <section id="Serveis" class="meusServeis">
+        <h1 class="titol titol-serveis">Els meus serveis</h1>
+        <div class="serveis">
+        
+            <div class="servei">
                 <h2 >Títols</h2>
                 <p> Durant aquests anys m'he tret dos títols, "Open Water" i "l'Advance".</p>
-                <img src="./img/foto1 buceo.jpg" alt="" width="10%">
+                <img src="./img/foto1 buceo.jpg" alt="">
             </div>
-            <div>
+            <div class="servei">
                 <h2>Experiència</h2>
                 <p>És un hobi per el que em vaig interessar l'any passat i he anat compaginat amb els estudis aquests
                     dos últims anys. També he pogut aprendre sobre el món de la mar gràcies a l'oportunitat que em va
                     donar el centre de busseig merak, on aquest estiu vaig estar ajudat tot el mes d'agost.</p>
-                <img src="./img/fot9o 2 buceo.jpg" alt="" width="10%">
+                <img src="./img/fot9o 2 buceo.jpg" alt="">
             </div>
-            <div>
+            <div class="servei">
                 <h2>Futur</h2>
                 <p>En un futur esper poder ser instructora, per això em queden 3 curosos més que aniré completant durant
                     els pròxims anys.</p>
-                <img src="./img/foto 3 buceo.jpg" alt="" width="10%">
+                <img src="./img/foto 3 buceo.jpg" alt="">
             </div>
         </div>
-        <a href="Treballs"></a>
+        <a href="#Treballs" class="btn">Inmersions
+        </a>
     </section>
-<section id="Sobre mi">
-<h2 class="titol">Who I am</h2>
+<section id="Sobre mi" class="about">
+<h2 class="titol titol-about">Who I am</h2>
 <p class="subtitol subtitol-about">Bussejadora professional</p>
 <div>
     <p>Visc a Maó amb els meus pares i amb el meu germà que actualment està vivint a Palma, ja que estudia econòmiques a la UIB. Ara mateix estic cursant 2 de batxiller biològic al Ramis.</p>
     <p>La màxima profunditat que he tocat han sigut 48 metres de vall l'aigua, a aquest nivell es troba el Juncker i santa clara, dos pecios molt importants que estan al sur de Menorca.</p>
 </div>
-<img src="./img/IMG_8626.jpg" alt="" width="10%">
+<img src="./img/IMG_8626.jpg" alt="" class="about-img">
 </section>
-<section id="Treballs">
+<section id="Treballs" class="treballs">
 <h2 class="titol">Inmersions</h2>
-<p class="subtitol">Pecios en Menorca</p>
-<div>
-    <a href="">
-        <img src="./img/amnesia.png" alt="" width="10%">
+<p class="subtitol subtitiol-treballs">Pecios en Menorca</p>
+<div class="porfoli">
+    <a href="" class="porfoli-obj">
+        <img src="./img/foto1.1.png" alt="" class="porfoli-img">
     </a>
-    <a href=""></a>
-        <img src="./img/francisquita.jfif" alt="" width="10%">
+    <a href="" class="porfoli-obj">
+        <img src="./img/foto1.2.jpg" alt="" class="porfoli-img">
     </a>
-    <a href=""></a>
-        <img src="./img/georgia.png" alt="" width="10%">
+    <a href="" class="porfoli-obj">
+        <img src="./img/foto 1.3.webp" alt="" class="porfoli-img">
     </a>
-    <a href=""></a>
-        <img src="./img/Diseno-sin-titulo.jpg" alt="" width="10%">
+    <a href="" class="porfoli-obj">
+        <img src="./img/foto1.4.png" alt="" class="porfoli-img">
     </a>
-    <a href=""></a>
-        <img src="./img/juncker.jfif" alt="" width="10%">
+    <a href="" class="porfoli-obj">
+        <img src="./img/foto 1.5.jpg" alt="" class="porfoli-img">
     </a>
-    <a href=""></a>
-        <img src="./img/malakof.png" alt="" width="10%">
+    <a href="" class="porfoli-obj">
+        <img src="./img/foto 1.6.png" alt="" class="porfoli-img" >
     </a>
-    <a href=""></a>
-        <img src="./img/ocean diver.jfif" alt="" width="10%">
+    <a href="" class="porfoli-obj">
+        <img src="./img/foto1.7.jpg" alt="" class="porfoli-img">
     </a>
-    <a href=""></a>
-        <img src="./img/plataforma.png" alt="" width="10%">
+    <a href="" class="porfoli-obj">
+        <img src="./img/foto1.8.png" alt="" class="porfoli-img">
     </a>
-    <a href=""></a>
-        <img src="./img/santa clara.jfif" alt="" width="10%">
+    <a href="" class="porfoli-obj">
+        <img src="./img/foto1.9.jpg" alt="" class="porfoli-img" >
     </a>
 </div>
 </section>
-<footer>
-    <a href="mailto:gdominguez20060@iesjoanramis.org">gdominguez20060@iesjoanramis.org</a>
-    <ul>
-        <li><a href="https://github.com/Gibet07">GitHub</a></li>
-        <li><a href="https://instagram.com/_gibet_">Instagram</a></li>
-        <li><a href="https://tiktok.com/_gibet_">Tik Tok</a></li>
-        <li><a href="https://bereal.com/_gibet_">Be real</a></li>
+<footer class="footer">
+    <a href="mailto:gdominguez20060@iesjoanramis.org" class="link">gdominguez20060@iesjoanramis.org</a>
+    <ul class="lista">
+        <li class="item-list"><a href="https://github.com/Gibet07" class="link-list"><i class="fa-solid fa-user-astronaut" style="color: #ffffff;"></i></a></li>
+        <li class="item-list"><a href="https://instagram.com/_gibet_" class="link-list"><i class="fa-solid fa-meteor" style="color: #ffffff;"></i></a></li>
+        <li class="item-list"><a href="https://tiktok.com/_gibet_"class="link-list"><i class="fa-solid fa-music" style="color: #ffffff;"></i></a></li>
+        <li class="item-list"><a href="https://bereal.com/_gibet_"class="link-list"><i class="fa-solid fa-photo-film" style="color: #ffffff;"></i></a></li>
     </ul>
 </footer>
 </body>
+<script>
+    document.getElementById("hola").addEventListener("click", function(){
+        document.getElementById("m").classList.add("xavi")})
 
+    document.getElementById("b1").addEventListener("click", function(){
+        document.getElementById("m").classList.remove("xavi")})
+
+     document.getElementById("b2").addEventListener("click", function(){
+            document.getElementById("m").classList.remove("xavi") })
+
+    document.getElementById("b3").addEventListener("click", function(){
+                document.getElementById("m").classList.remove("xavi")})
+
+    document.getElementById("b4").addEventListener("click", function(){
+                    document.getElementById("m").classList.remove("xavi")  })
+</script>
 </html>
